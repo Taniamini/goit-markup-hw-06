@@ -959,6 +959,16 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+
+  transition: color var(--anim);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--accent-txt-cl);
+}
+
+.modal-btn-icon {
+  fill: currentColor;
 }
 
 /*
@@ -1009,6 +1019,7 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
 
   transition: border var(--anim);
 }
