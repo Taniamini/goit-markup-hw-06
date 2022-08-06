@@ -1041,14 +1041,16 @@ img {
   bottom: 11px;
   left: 12px;
 
-  transition: color var(--anim);
+  transition: fill var(--anim);
 }
-.register-form-icon:hover,
-.register-form-icon:focus {
-  color: var(--accent-txt-cl);
+
+.register-form-icon:placeholder-shown {
+  fill: var(--main-txt-cl);
 }
-.register-form-icon {
-  fill: currentColor;
+
+.register-form-input:hover + .register-form-icon,
+.register-form-input:focus + .register-form-icon {
+  fill: var(--accent-txt-cl);
 }
 
 .register-form-agreement {
